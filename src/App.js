@@ -1,25 +1,15 @@
-import logo from './logo.svg';
+import Componentes from './componentes/Componentes';
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import Carrusel from './componentes/Carrusel';
+import 'bootstrap/dist/css/bootstrap.min.css';
+const App = () => {
+	return (
+    <div className='bg'>
+      <Componentes/>
+    <Carrusel/>
     </div>
-  );
+		
+	);
 }
 
 export default App;

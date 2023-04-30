@@ -1,38 +1,117 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.cont {
+	max-width: 60%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.bg{
+  background: rgb(31, 31, 31);
+}
+.titulo{
+  font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+  color:red;
   text-align: center;
+  text-decoration: underline;
+  margin-top: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.imagen{
+  width: 250px;
+  height: 280px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  height: 400px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  perspective: 500px;
+  margin: auto auto;
 }
 
-.App-link {
-  color: #61dafb;
+
+.link{
+  width: 250px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  perspective: 500px;
+  animation: rotar 7s linear infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.logo{
+  width: 250px;
+  height: 280px;
+  position: absolute;
+  top: -10px;
+  filter: drop-shadow(0px 5px 10px #ff0000);
+  animation: rotar 7s linear infinite;
+}
+
+.logo:hover{
+  cursor: pointer;
+}
+
+@keyframes rotar{
+  from{
+      transform: rotateY(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  to{
+      transform: rotateY(-360deg);
   }
 }
+
+.bottom_part{
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  bottom: -94px;
+  background: #242424;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 10px 10px #11111136;
+  transform: rotateX(90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom_part::before{
+  content: "";
+  width: 16rem;
+  height: 16rem;
+  position: absolute;
+  bottom: 5rem;
+  background: #ff0000;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 10px 10px #11111136;
+  filter: blur(30px);
+  animation: Animate 1s linear infinite;
+}
+
+@keyframes Animate {
+  from{
+      width: 16rem;
+      height: 16rem;
+  }
+  50%{
+      width: 12rem;
+      height: 12rem;
+  }
+  to{
+      width: 16rem;
+      height: 16rem;
+  }
+} 
