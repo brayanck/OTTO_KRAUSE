@@ -6,16 +6,21 @@
 	box-sizing: border-box;
 }
 
-body{
-  min-height: 100%;
+html, body{
+  height:100%;
+  margin: 0
 }
 .cont {
 	max-width: 60%;
 	margin: 0 auto;
 	overflow: hidden;
 }
+#root{
+  height:100%;
+}
 .bg{
   background: rgb(31, 31, 31);
+  height:100%;
 }
 .titulo{
   font-size: 25px;
