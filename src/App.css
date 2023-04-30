@@ -6,6 +6,9 @@
 	box-sizing: border-box;
 }
 
+body{
+  min-height: 100%;
+}
 .cont {
 	max-width: 60%;
 	margin: 0 auto;
